@@ -1,5 +1,5 @@
 <template>
-  <h1>Ninja Reaction Timer</h1>
+  <h1>Reaction Timer</h1>
   <button @click="start" :disabled="isPlaying">play</button>
   <Block v-if="isPlaying" :delay="delay" @end="endGame" />
   <p v-if="showResults">Reaction time: {{ score }} ms</p>
@@ -45,7 +45,7 @@ export default {
     margin-top: 60px;
   }
   button {
-    background: #0faf87;
+    background: #af0f4c;
     color: white;
     border: none;
     padding: 8px 16px;
